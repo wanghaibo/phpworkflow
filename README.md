@@ -16,3 +16,5 @@ git clone ssh://user@git.example.com:8080/opt/git/my_project.git
 ##git allow remote push##
 [receive]
     denyCurrentBranch = ignore
+##镜像下载
+http://mirrors.163.com/
