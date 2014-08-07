@@ -14,7 +14,11 @@ yum install git-core
 git clone ssh://user@git.example.com:8080/opt/git/my_project.git
 
 ##git allow remote push##
-[receive]
-    denyCurrentBranch = ignore
+    [receive]
+        denyCurrentBranch = ignore
 ##镜像下载
-http://mirrors.163.com/
+    http://mirrors.163.com/
+##git bash自定义home目录
+    -打开git安装目录\etc\profile
+    -找到normalize HOME
+    -添加HOME="D:/code"  cd $HOME
