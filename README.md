@@ -29,15 +29,15 @@ git clone ssh://user@git.example.com:8080/opt/git/my_project.git
  * rpm -i 'http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm'
  * rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt
 
- *RHEL/CentOS 6 - 32bit
- *rpm -i 'http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.i686.rpm'
- *rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt
+ * RHEL/CentOS 6 - 32bit
+ * rpm -i 'http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el6.rf.i686.rpm'
+ * rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt
 
 
- *vim /etc/yum.repos.d/rpmforge.repo
- *Edit your rpmforge repository file and change enabled=1 from 0 in [rpmforge-extras] section
+ * vim /etc/yum.repos.d/rpmforge.repo
+ * Edit your rpmforge repository file and change enabled=1 from 0 in [rpmforge-extras] section
 
- *yum update git
- *Edit and disable rpmforge-extras repository in rpmforge.repo and clean the yum data
- *yum clean all
+ * yum update git
+ * Edit and disable rpmforge-extras repository in rpmforge.repo and clean the yum data
+ * yum clean all
 
