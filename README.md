@@ -41,3 +41,5 @@ git clone ssh://user@git.example.com:8080/opt/git/my_project.git
  * Edit and disable rpmforge-extras repository in rpmforge.repo and clean the yum data
  * yum clean all
 
+###提取git两个版本的差异，并打包文件
+ * git diff c985a0b6319c712fbeff5ad9f07d501924914bcf f76901160ff31b6dbc5299deb804496cc40d22a2 --name-only|xargs zip ~/update.zip &&sz ~/update.zip
