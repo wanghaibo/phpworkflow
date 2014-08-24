@@ -42,4 +42,4 @@ git clone ssh://user@git.example.com:8080/opt/git/my_project.git
  * yum clean all
 
 ###提取git两个版本的差异，并打包文件
- * git diff c985a0b6319c712fbeff5ad9f07d501924914bcf f76901160ff31b6dbc5299deb804496cc40d22a2 --name-only|xargs zip ~/update.zip &&sz ~/update.zip
+ * git add * && git commit -a -m'loginfo' && git log --pretty=oneline -2|awk '{print $1}'|xargs git diff --name-only|xargs zip ~/update.zip &&sz ~/update.zip
