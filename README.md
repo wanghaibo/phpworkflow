@@ -43,3 +43,6 @@ git clone ssh://user@git.example.com:8080/opt/git/my_project.git
 
 ###提取git两个版本的差异，并打包文件
  * git add * && git commit -a -m'loginfo' && git log --pretty=oneline -2|awk '{print $1}'|xargs git diff --name-only|xargs zip ~/update.zip &&sz ~/update.zip
+ 
+###curl resolve
+ * curl --resolve foo.example.com:443:127.0.0.1 https://foo.example.com:443/
