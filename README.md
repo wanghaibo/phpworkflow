@@ -46,3 +46,10 @@ git clone ssh://user@git.example.com:8080/opt/git/my_project.git
  
 ###curl resolve
  * curl --resolve foo.example.com:443:127.0.0.1 https://foo.example.com:443/
+
+###内存清理
+ * #!/bin/bash
+ * source /etc/profile
+ * source /root/.bash_profile
+ * sync
+ * echo 3 > /proc/sys/vm/drop_caches
