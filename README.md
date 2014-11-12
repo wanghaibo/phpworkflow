@@ -54,4 +54,4 @@ git clone ssh://user@git.example.com:8080/opt/git/my_project.git
  * sync
  * echo 3 > /proc/sys/vm/drop_caches
 ###mysql清理请求
-mysqladmin -uroot -p processlist|awk -F "|" '{print $2}'|xargs -n 1 mysqladmin -uroot -p kill
+ * mysqladmin -uroot -p processlist|awk -F "|" '{print $2}'|xargs -n 1 mysqladmin -uroot -p kill
