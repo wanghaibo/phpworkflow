@@ -58,7 +58,7 @@ git clone ssh://user@git.example.com:8080/opt/git/my_project.git
  * mysqladmin -uroot -p processlist|awk -F "|" '{print $2}'|xargs -n 1 mysqladmin -uroot -p kill
 
 ###cannot find input file: Makefile.in
- *　aclocal
- *　autoconf
- *　autoheader
- *　automake --add-missing
+ * aclocal
+ * autoconf
+ * autoheader
+ * automake --add-missing
