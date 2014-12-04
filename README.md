@@ -46,6 +46,7 @@ git clone ssh://user@git.example.com:8080/opt/git/my_project.git
  
 ###curl resolve
  * curl --resolve foo.example.com:443:127.0.0.1 https://foo.example.com:443/
+ * curl -o /dev/null -s -w '%{http_code} %{time_total}' -m 2 --resolve basic.10jqka.com.cn:80:192.168.0.63 http://basic.10jqka.com.cn/m001/pubn.html
 
 ###内存清理
  * #!/bin/bash
