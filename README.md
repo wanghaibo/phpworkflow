@@ -63,6 +63,7 @@ git clone ssh://user@git.example.com:8080/opt/git/my_project.git
  * autoconf
  * autoheader
  * automake --add-missing
+ 
 ###mount && remount
  * mount -t tmpfs -o size=2560m,mode=0755   tmpfs /var/www/html/Baidu/Quote
  * mount -o remount,size=2560m,mode=0755 tmpfs /var/www/html/Baidu/Quote
